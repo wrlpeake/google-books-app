@@ -40,8 +40,12 @@ async function searchBooks() {
                         searchResults.push(books[i].volumeInfo.title)
                     }
                 })
+                // added error catching after Matt's feedback, incorrect search terms will now display
+                // an error message rather than crashing the programme
+                .catch(err => console.error("No books found, restart application"))
+        })
+        .catch(err => console.error("Incorrect search term, please re-start application"))
 
-        });
     return searchResults;
 }
 // The readingList function takes the array of book titles returned by searchBooks and queries the user if they wish to save a book to the waiting list
