@@ -99,6 +99,7 @@ async function main() {
         const addToReadingList = await readingList(search)
     i++;
     }
+    return true;
 }
 
 main()
