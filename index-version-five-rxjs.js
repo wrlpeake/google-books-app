@@ -1,3 +1,5 @@
+// Reactive interface from research would allow more possibilities for parsing the user responses but requires more research
+
 import {Observable} from 'rxjs';
 const inquirer = require("inquirer");
 const axios = require("axios");
