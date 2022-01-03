@@ -31,6 +31,8 @@ The application uses Node.js and will require the following packages to be insta
 - yargs (npm install yargs)
 - inquirer (mpn install inquirer)
 - axios (npm install axios)
+- yarn (npm install yarn)
+- jest (npm install --save-dev jest
 
 How to Use the Application:
 
@@ -58,12 +60,18 @@ Please find below the resources I used when researching and completing this proj
     - https://www.sitepoint.com/javascript-command-line-interface-cli-node-js/
     - https://www.educative.io/edpresso/how-to-use-the-inquirer-node-package
     - https://www.npmjs.com/package/yargs
+    - https://nodejs.dev/learn/error-handling-in-nodejs
+    - https://classic.yarnpkg.com/en/
+    - https://github.com/rwieruch/node-js-jest
+    - https://jestjs.io/
 
 Tests:
 
-Upon feedback from Matt @ 8th Light, I have used the Jest framework to add automated testing to the file to check the
+Upon feedback from Matt Readout, I have used the Jest framework to add automated testing to the file to check the
 following search terms would query the API correctly and that the 'axios' API call functions correctly via a mock
 function, ensuring we can test the syntax of the application is correct, even if there is an issue with the API itself.
+
+To run index.test.js file, run 'yarn test' in the project command line.
 
     Search terms:
         - 'potter' - OK

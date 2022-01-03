@@ -33,11 +33,16 @@ async function searchBooks() {
                 .then(res => {
                     const books = (res.data.items);
                     for (let i = 0; i < 5; i++) {
-                        console.log("\n" + "Book Result " + (i + 1));
-                        console.log("Title: " + books[i].volumeInfo.title);
-                        console.log("Author(s): " + books[i].volumeInfo.authors);
-                        console.log("Publisher: " + books[i].volumeInfo.publisher + "\n");
-                        searchResults.push(books[i].volumeInfo.title)
+                        // addresses MR's feedback for if less than five book results are returned
+                        if (books[i] == null)
+                            return searchResults;
+                        else {
+                            console.log("\n" + "Book Result " + (i + 1));
+                            console.log("Title: " + books[i].volumeInfo.title);
+                            console.log("Author(s): " + books[i].volumeInfo.authors);
+                            console.log("Publisher: " + books[i].volumeInfo.publisher + "\n");
+                            searchResults.push(books[i].volumeInfo.title)
+                        }
                     }
                 })
                 // added error catching after Matt's feedback, incorrect search terms will now display
