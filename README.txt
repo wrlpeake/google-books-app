@@ -68,7 +68,7 @@ Tests:
         - 'sally rooney' - OK
         - '123' - OK
         - '[' - OK
-        - '\\\' - OK
+        - '\\' - OK
         - '000' - OK
         - 'author' - OK
         - '!!!' - OK

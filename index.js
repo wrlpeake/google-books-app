@@ -42,9 +42,9 @@ async function searchBooks() {
                 })
                 // added error catching after Matt's feedback, incorrect search terms will now display
                 // an error message rather than crashing the programme
-                .catch(err => console.error("No books found, restart application"))
+                .catch(err => console.error("No books found, search again"))
         })
-        .catch(err => console.error("Incorrect search term, please re-start application"))
+        .catch(err => console.error("Incorrect search term, search again"))
 
     return searchResults;
 }
@@ -76,16 +76,18 @@ async function readingList(searchResult) {
             const bookIndex = (answer.addToReadingList);
             let showReadingList = (answer.displayReadingList);
             if (bookIndex == "none")
-                console.log("No book selected - search again");
+                // added additional new lines to stop fifth book result disappearing once
+                // reading list question appears but does not resolve the problem - considering other options
+                console.log("\n" + "No book selected - search again");
             else {
                 myReadingList.push(searchResult[(bookIndex - 1)])
-                console.log(searchResult[(bookIndex - 1)] + " - Added to your Reading List");
+                console.log("\n" + searchResult[(bookIndex - 1)] + " - Added to your Reading List");
             }
             if (showReadingList == "Yes") {
-                console.log("Your Reading List: " + myReadingList.join(" | "));
+                console.log("\n" + "Your Reading List: " + myReadingList.join(" | "));
             }
             else {
-                console.log("You have chosen not to see your reading list - search again");
+                console.log("\n" + "You have chosen not to see your reading list - search again");
             }
         });
 
@@ -107,8 +109,6 @@ async function main() {
 }
 
 main()
-
-
 
 
 
