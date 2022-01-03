@@ -1,5 +1,5 @@
 // William Peake - 8th Light Technical Assessment - Google Books API Search Command Line Application in Node.js
-// Saved as index-version-six before re-factoring code to remove inconsistent async/await and .then() usage
+// Saved as index-version-six while re-factoring code to remove inconsistent async/await and .then() usage
 
 // The two packages required to execute the programme are 'Inquirer', which allows me to ask the user questions and record their answers
 // The 'axios' package allows me to access the Google Books API
