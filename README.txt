@@ -32,7 +32,7 @@ The application uses Node.js and will require the following packages to be insta
 - inquirer (mpn install inquirer)
 - axios (npm install axios)
 - yarn (npm install yarn)
-- jest (npm install --save-dev jest
+- jest (npm install --save-dev jest)
 
 How to Use the Application:
 
