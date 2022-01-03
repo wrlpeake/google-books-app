@@ -1,10 +1,20 @@
-const index = require('./index');
-const axios = require('axios');
+// Automated testing with JEST for index.js
+
 // What should should be tested here?
 // Whether the API is called correctly within the application?
 // Are the search terms suitable?
 // Should the API be called in the test or is there a way to test the syntax in case there is an
 // issue with the API?
+
+const index = require('./index');
+const axios = require('axios');
+
+// import searchBooks from './index.js'
+// import readingList from './index.js'
+
+// I would like to have completed more thorough testing of the functions in the index.js file, but I have
+// been receiving errors stating that the testing file cannot import my functions. I have not been able to resolve
+// these errors in the timeframe provided, but will continue to research and refactor
 
 jest.mock('axios');
 

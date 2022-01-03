@@ -1,5 +1,5 @@
 // William Peake - 8th Light Technical Assessment - Google Books API Search Command Line Application in Node.js
-// Final Master Version, please use this file to run the application
+// Saved as index-version-six before re-factoring code to remove inconsistent async/await and .then() usage
 
 // The two packages required to execute the programme are 'Inquirer', which allows me to ask the user questions and record their answers
 // The 'axios' package allows me to access the Google Books API
@@ -58,7 +58,6 @@ async function searchBooks() {
 // If they choose to add a book to the waiting list, the title of that book is added to their reading list and confirmed to the user
 // The user will then be asked if they wish to view their reading list or not
 async function readingList(searchResult) {
-// Re-factored the function upon MR's feedback to remove .then() blocks which are not required when using async/await features.
 
     // The await inquirer.prompt asks both questions of the user then waits for their response before executing their request
     // Using "list" as the prompt type reduces the likelihood of errors from a free-type response

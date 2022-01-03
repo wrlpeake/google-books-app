@@ -70,6 +70,9 @@ Tests:
 Upon feedback from Matt Readout, I have used the Jest framework to add automated testing to the file to check the
 following search terms would query the API correctly and that the 'axios' API call functions correctly via a mock
 function, ensuring we can test the syntax of the application is correct, even if there is an issue with the API itself.
+I would like to have completed more thorough testing of the functions in the index.js file, but I have been receiving
+errors stating that the testing file cannot import my functions. I have not been able to resolve these errors in the
+timeframe provided, but will continue to research and refactor.
 
 To run index.test.js file, run 'yarn test' in the project command line.
 
