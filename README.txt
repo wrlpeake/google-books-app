@@ -61,6 +61,10 @@ Please find below the resources I used when researching and completing this proj
 
 Tests:
 
+Upon feedback from Matt @ 8th Light, I have used the Jest framework to add automated testing to the file to check the
+following search terms would query the API correctly and that the 'axios' API call functions correctly via a mock
+function, ensuring we can test the syntax of the application is correct, even if there is an issue with the API itself.
+
     Search terms:
         - 'potter' - OK
         - 'tolkien' - OK
@@ -73,7 +77,7 @@ Tests:
         - 'author' - OK
         - '!!!' - OK
         
-William Peake - 21/12/21
+William Peake - 03/01/22
 
 
 
