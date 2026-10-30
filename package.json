@@ -10,7 +10,7 @@
   "author": "William peake",
   "license": "ISC",
   "dependencies": {
-    "inquirer": "^8.2.0",
+    "inquirer": "^14.0.0",
     "rxjs": "^7.4.0",
     "yargs": "^17.3.0",
     "yarn": "^1.22.17"
